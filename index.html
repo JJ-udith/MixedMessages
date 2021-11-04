@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <script type="text/javascript" src="functions.js" ></script>
+</head>
+<body>
+    <h1>Fortune Teller</h1>
+    <div id="allPieces">
+        <p id="intro"></p>
+        <p id="anObject"></p>
+        <p id="context"></p>
+        <p id="fortune"></p>
+    </div>
+    
+    <script>
+        var newEl = document.getElementById("intro");
+        var newText = document.createTextNode(chosenIntro);
+        newEl.appendChild(newText);
+        var newEl = document.getElementById("anObject");
+        var newText = document.createTextNode(chosenObject);
+        newEl.appendChild(newText);
+        var newEl = document.getElementById("context");
+        var newText = document.createTextNode(chosenContext);
+        newEl.appendChild(newText);
+        var newEl = document.getElementById("fortune");
+        var newText = document.createTextNode(chosenFortune);
+        newEl.appendChild(newText);
+    </script>
+</body>
+</html>
