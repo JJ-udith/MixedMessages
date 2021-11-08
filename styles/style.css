@@ -1,0 +1,40 @@
+/* font-family: 'Butcherman', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'UnifrakturMaguntia', cursive; */
+
+body {
+    background-image: url('../images/pexels-rachel-claire-4998014.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.5;
+    color: white;
+}
+
+header {
+    display: flex;
+    border: 1px red solid;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 7em;
+}
+
+.headline {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Creepster', cursive;
+    color: rgb(139, 23, 23);
+}
+
+#form-card {
+    border: 1px red solid;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
