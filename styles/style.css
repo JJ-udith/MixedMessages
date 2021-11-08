@@ -33,6 +33,16 @@ body {
   }
 }
 
+/* Body for Desktop Screens */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url("../images/pexels-rachel-claire-4998014.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 /* Header */
 header {
   display: flex;
@@ -46,7 +56,7 @@ header {
   text-align: center;
   font-size: 2rem;
   font-family: "Creepster", cursive;
-  color: white;
+  color: rgb(223, 223, 223);
 }
 
 /* Header for Landscape Mobile Screens */
@@ -75,6 +85,17 @@ header {
 
   .headline {
     font-size: 4rem;
+  }
+}
+
+/* Header for Desktop Screens */
+@media only screen and (min-width: 1200px) {
+  header {
+    margin-top: 5em;
+  }
+
+  .headline {
+    font-size: 5rem;
   }
 }
 
@@ -189,6 +210,32 @@ header {
   #name {
     width: 75%;
     margin-top: 1em;
+    font-size: 2.5rem;
+  }
+
+  #submit-btn {
+    margin-top: 2em;
+    font-size: 1.8rem;
+  }
+}
+
+/* Form for Desktop Screens */
+@media only screen and (min-width: 1200px) {
+  #form-card {
+    height: 55vh;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  #label-text {
+    padding-top: 1.25em;
+    font-size: 3.5rem;
+  }
+
+  #name {
+    width: 75%;
+    margin-top: 2em;
     font-size: 2.5rem;
   }
 
