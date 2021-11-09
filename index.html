@@ -20,30 +20,36 @@
   </head>
   <body>
     <header>
-      <h1 class="headline">Welcome to the Chamber of Prophecy</h1>
+      <h1 id="headline">Welcome to the Chamber of Prophecy</h1>
     </header>
     <main>
-      <section id="form-card">
-        <form id="form" onsubmit="event.preventDefault()">
-          <label for="name" id="label-text">Give Me Your Name</label>
-          <br />
-          <input
-            type="text"
-            value=""
-            id="name"
-            placeholder="Enter Name"
-            required
-          />
-          <br />
-          <input
-            type="submit"
-            value="Submit"
-            id="submit-btn"
-            onclick="clickAction()"
-          />
-        </form>
-      </section>
+      <div id="card">
+        <section id="form-card">
+          <form id="form" onsubmit="event.preventDefault()">
+            <label for="name" id="label-text">Give Me Your Name</label>
+            <br />
+            <input
+              type="text"
+              value=""
+              id="name"
+              placeholder="Enter Name"
+              required
+            />
+            <br />
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              onclick="submitAction()"
+            />
+          </form>
+          <p id="part-one">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            dolore?
+          </p>
+        </section>
+      </div>
     </main>
-    <footer>&copy; All Rights Reserved</footer>
+    <footer id="footer">&copy; All Rights Reserved</footer>
   </body>
 </html>
