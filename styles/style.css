@@ -121,8 +121,9 @@ header {
 }
 
 #name {
+  border: 2px solid rgb(196, 36, 36);
+  outline: none;
   border-radius: 5px;
-  border-color: rgb(163, 32, 32);
   text-align: center;
   height: 2em;
   width: 75%;
@@ -131,6 +132,10 @@ header {
   font-family: "Creepster", cursive;
   font-size: 1.5rem;
   color: rgb(196, 36, 36);
+}
+
+#name:focus {
+  border: 2px solid rgb(196, 36, 183);
 }
 
 #submit-btn {
@@ -144,6 +149,11 @@ header {
   font-family: "Nosifer", cursive;
   font-size: 1rem;
   cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: rgb(230, 0, 0);
+  color: black;
 }
 
 /* Form for Landscape Mobile Screens */
@@ -247,7 +257,7 @@ header {
   display: none;
   font-family: "Nosifer", cursive;
   font-size: 1.5rem;
-  color: rgb(12, 7, 77);
+  color: #a80808;
   padding: 1em;
 }
 
