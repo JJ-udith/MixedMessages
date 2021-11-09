@@ -7,7 +7,7 @@ const intros = [
   "Well, if you ask me...",
   "I'm not sure how to tell you this.",
   "Mmmmhhhh...",
-  "Is that smoke? How does that happened? Anyway.",
+  "Is that smoke? How did that happen? Anyway.",
   "Your fortune is my fortune.",
   "On your marks. Get set. Go.",
 ];

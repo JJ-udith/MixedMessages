@@ -4,7 +4,7 @@ const footer = document.getElementById("footer");
 const form = document.getElementById("form");
 const nameElement = document.getElementById("name");
 const submitButton = document.getElementById("submit-btn");
-const partOne = document.getElementById("part-one");
+const firstMessage = document.getElementById("first-message");
 
 // Fade Effect on Page Load
 $(document).ready(() => $(card).fadeTo(2000, 0.9));
@@ -20,6 +20,6 @@ const fadeEffect = (element1, element2) => {
 
 const submitAction = () => {
   if (nameElement.value) {
-    fadeEffect(form, partOne);
+    fadeEffect(form, firstMessage);
   }
 };
