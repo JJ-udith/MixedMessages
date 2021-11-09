@@ -111,8 +111,11 @@ header {
 /* Form */
 #form-card {
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  height: 50vh;
+  height: 40vh;
   opacity: 0.9;
   box-shadow: 1px 1px 5px rgba(70, 70, 70, 0.8);
   margin-top: 2em;
@@ -127,10 +130,19 @@ header {
   }
 }
 
+#form {
+  opacity: 1;
+  display: block;
+  transition: opacity 1s ease-in-out;
+}
+
+#form.fadeIn {
+  opacity: 0;
+}
+
 #label-text {
   font-family: "Butcherman", cursive;
   font-size: 1.5rem;
-  padding-top: 1.5em;
   display: block;
   word-spacing: 0.5em;
 }
@@ -158,6 +170,7 @@ header {
   box-shadow: 1px 1px 5px rgba(70, 70, 70, 0.8);
   font-family: "Nosifer", cursive;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 /* Form for Landscape Mobile Screens */
@@ -166,11 +179,7 @@ header {
     height: 60vh;
     margin: 0 auto;
     margin-top: 1em;
-    width: 75%;
-  }
-
-  #label-text {
-    padding-top: 0.5em;
+    width: 60%;
   }
 
   #name {
@@ -181,21 +190,20 @@ header {
 
   #submit-btn {
     margin-top: 1.25em;
-    width: 30%;
+    width: 40%;
   }
 }
 
 /* Form for Tablet Screens */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
   #form-card {
-    height: 45vh;
+    height: 40vh;
     width: 80%;
     margin: 0 auto;
     margin-top: 2em;
   }
 
   #label-text {
-    padding-top: 1.25em;
     font-size: 3rem;
   }
 
@@ -214,14 +222,13 @@ header {
 /* Form for Tablet Landscape Screens */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
   #form-card {
-    height: 60vh;
-    width: 80%;
+    height: 55vh;
+    width: 60%;
     margin: 0 auto;
     margin-top: 2em;
   }
 
   #label-text {
-    padding-top: 1.25em;
     font-size: 3rem;
   }
 
@@ -240,14 +247,13 @@ header {
 /* Form for Desktop Screens */
 @media only screen and (min-width: 1200px) {
   #form-card {
-    height: 55vh;
-    width: 50%;
+    height: 50vh;
+    width: 38%;
     margin: 0 auto;
     margin-top: 2em;
   }
 
   #label-text {
-    padding-top: 1.25em;
     font-size: 3.5rem;
   }
 

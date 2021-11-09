@@ -14,6 +14,8 @@
     />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="./script/main.js" defer></script>
     <title>Fortune Teller</title>
   </head>
   <body>
@@ -21,19 +23,26 @@
       <h1 class="headline">Welcome to the Chamber of Prophecy</h1>
     </header>
     <main>
-      <form id="form-card">
-        <label for="name" id="label-text">Give Me Your Name</label>
-        <br />
-        <input
-          type="text"
-          value=""
-          id="name"
-          placeholder="Enter Name"
-          required
-        />
-        <br />
-        <input type="submit" value="Submit" id="submit-btn" />
-      </form>
+      <section id="form-card">
+        <form id="form" onsubmit="event.preventDefault()">
+          <label for="name" id="label-text">Give Me Your Name</label>
+          <br />
+          <input
+            type="text"
+            value=""
+            id="name"
+            placeholder="Enter Name"
+            required
+          />
+          <br />
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            onclick="clickAction()"
+          />
+        </form>
+      </section>
     </main>
     <footer>&copy; All Rights Reserved</footer>
   </body>
